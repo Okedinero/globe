@@ -14,7 +14,7 @@ const Countries = ({ allCountries }) => {
             <div className="shadow rounded-2 m-3 bg-elements custom-text-color">
               <img className="rounded-top-2" src={country.flags.png} alt="" />
               <div className="text-start p-4">
-                <h4 className="mb-3">{country.name.common}</h4>
+                <h4 className="mb-3">{country.name.common.slice(0, 15)}</h4>
                 <p className="mb-1">
                   <b>Population:</b> {country.population.toLocaleString()}
                 </p>
