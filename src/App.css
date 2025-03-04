@@ -94,7 +94,7 @@ input {
   font-size: 100px;
   margin: auto 400px;
   display: inline-block;
-  animation: spin 3s ease infinite;
+  animation: spin 5s ease infinite;
   width: 100px;
 }
 
@@ -108,13 +108,14 @@ input {
 }
 
 /* ========================================================= */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav {
-    width: 500px;
+    width: 375x;
+    justify-content: space-between;
   }
 
   .filter-drop {
     display: flex;
-    flex-direction: column;
+    width: 375px;
   }
 }

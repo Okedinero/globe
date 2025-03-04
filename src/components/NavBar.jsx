@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { BsMoon, BsMoonFill } from "react-icons/bs";
+import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -18,7 +18,7 @@ const NavBar = () => {
     document.body.classList.add("light-mode");
   }
 
-  const icon = darkMode ? <BsMoonFill /> : <BsMoon />;
+  const icon = darkMode ? <BsSunFill /> : <BsMoonFill />;
   return (
     <nav className="d-flex justify-content-between align-items-center p-5 shadow bg-elements custom-text-color">
       <Link to="/" className="text-decoration-none custom-text-color">
