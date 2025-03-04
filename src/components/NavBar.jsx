@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { BsMoon, BsMoonFill } from "react-icons/bs";
+import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -11,14 +11,14 @@ const NavBar = () => {
   });
   // Applying appropriate class to the body based on the darkMode state.
   if (darkMode) {
-    // Removes lightmode class if darkmode is enabled.
+    // Removes light mode class if dark mode is enabled.
     document.body.classList.remove("light-mode");
   } else {
-    // Adds lightmode class if darkmode is disabled.
+    // Adds light mode class if dark mode is disabled.
     document.body.classList.add("light-mode");
   }
 
-  const icon = darkMode ? <BsMoonFill /> : <BsMoon />;
+  const icon = darkMode ? <BsSunFill /> : <BsMoonFill />;
   return (
     <nav className="d-flex justify-content-between align-items-center p-5 shadow bg-elements custom-text-color">
       <Link to="/" className="text-decoration-none custom-text-color">
@@ -30,7 +30,7 @@ const NavBar = () => {
           // Toggles the light-mode class in the CSS on the body.
           document.body.classList.toggle("light-mode");
 
-          // Updates the darkMode state with the opposite of what was previously in the darkmode.
+          // Updates the darkMode state with the opposite of what was previously in the dark mode(light mode).
           setDarkMode(!darkMode);
 
           // Updates the localStorage with the current mode either light or dark.

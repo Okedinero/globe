@@ -94,7 +94,7 @@ input {
   font-size: 100px;
   margin: auto 400px;
   display: inline-block;
-  animation: spin 3s ease infinite;
+  animation: spin 5s ease infinite;
   width: 100px;
 }
 
@@ -108,13 +108,55 @@ input {
 }
 
 /* ========================================================= */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav {
-    width: 500px;
+    justify-content: space-between;
+    padding: 0px;
+    text-align: start;
+    display: flex;
+    font-size: 14px;
+  }
+
+  .loader {
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .all-countries {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .w-search {
+    width: 350px;
+  }
+
+  .dropdown-display {
+    margin-right: 140px;
+    margin-top: 20px;
+  }
+
+  .cdimg {
+    width: 100%;
+    margin-left: 40px;
+    height: 250px;
+  }
+
+  .cd-text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+
+  .c-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .filter-drop {
     display: flex;
     flex-direction: column;
+    gap: 50px;
   }
 }

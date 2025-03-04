@@ -32,15 +32,15 @@ const EachCountry = ({ eachCountry }) => {
 
       {/* =================================================== */}
 
-      <div className="d-flex gap-5 align-items-center">
+      <div className="d-flex gap-5 align-items-center c-details">
         <img
           src={eachCountry.flags?.png}
           alt=""
           className="rounded me-5 cdimg"
         />
-        <div className="ms-5 d-flex flex-column gap-4 custom-text-color bg-element">
+        <div className="big-cd-text ms-5 d-flex flex-column gap-4 custom-text-color bg-element">
           <h2>{eachCountry.name?.common}</h2>
-          <div className="d-flex gap-5 mb-5 align-items-start">
+          <div className="cd-text d-flex gap-5 mb-5 align-items-start">
             <div>
               <p className="mb-1">
                 <b>Native Name:</b> {nativeName}
