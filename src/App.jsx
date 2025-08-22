@@ -17,7 +17,9 @@ function App() {
 
   useEffect(() => {
     const getData = async () => {
-      const fetchAPI = await fetch("https://restcountries.com/v3.1/all");
+      const fetchAPI = await fetch(
+        "https://restcountries.com/v3.1/all?fields=name,capital,flags,region,population"
+      );
 
       const jsonAPI = await fetchAPI.json();
       console.log(jsonAPI);
